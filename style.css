@@ -3,7 +3,7 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background-color: #f5e6d3;
+            background-color: #911f27;
         }
 	a { color: #911f27 }
 	a:hover { color: #000000 }
@@ -11,7 +11,7 @@
         .container {
             max-width: 900px;
             margin: auto;
-            background: #fcf0c8;
+            background: #fff0bf;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
