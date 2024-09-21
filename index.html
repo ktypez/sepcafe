@@ -10,129 +10,218 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background-color: #f5e6d3; /* Light beige background */
+            background-color: #f5e6d3;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
-            background: #fff9ef; /* Lighter beige for container */
+            background: #fff9ef;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h1 {
-            color: #8b0000; /* Dark red for main title */
+            color: #8b0000;
             text-align: center;
             border-bottom: 2px solid #8b0000;
             padding-bottom: 10px;
+            margin-bottom: 30px;
         }
         h2 {
-            color: #a52a2a; /* Brown-red for section titles */
+            color: #a52a2a;
             border-left: 4px solid #a52a2a;
             padding-left: 10px;
         }
         .menu-section {
             margin-bottom: 20px;
-            background-color: #fff; /* White background for each section */
+            background-color: #fff;
             padding: 15px;
             border-radius: 5px;
         }
         .menu-item {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             margin-bottom: 10px;
-            border-bottom: 1px dashed #d2b48c; /* Tan border */
+            border-bottom: 1px dashed #d2b48c;
             padding-bottom: 5px;
         }
         .item-name {
             font-weight: bold;
-            color: #8b4513; /* Saddle brown for item names */
+            color: #8b4513;
+            flex: 1;
         }
-        .item-price {
-            color: #a52a2a; /* Brown-red for prices */
+        .item-prices {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
         }
-        .soft-opening {
+        .price {
+            color: #a52a2a;
+            width: 70px;
             text-align: center;
-            color: #8b0000; /* Dark red */
-            font-style: italic;
-            margin-top: 20px;
+        }
+        .price-header {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #8b0000;
+            border-bottom: 2px solid #8b0000;
+            padding-bottom: 5px;
+        }
+        .price-header span {
+            width: 70px;
+            text-align: right;
+            padding: 0 5px;
+        }
+        .price-columns {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>SEP Cafe and Bar Menu</h1>
-        <div class="soft-opening">Soft Opening: 7 September 2024</div>
         
+	<h1>SEP Cafe and Bar</h1>        
+
         <div class="menu-section">
-            <h2>COFFEE (HOT / ICED / FRAPPE)</h2>
+            <h2>COFFEE</h2>
+            <div class="price-header">
+                <span>HOT</span>
+                <span>ICED</span>
+                <span>FRAPPE</span>
+            </div>
             <div class="menu-item">
                 <span class="item-name">Americano</span>
-                <span class="item-price">60.- / 75.- -</span>
+                <div class="item-prices">
+                    <span class="price">60-</span>
+                    <span class="price">75-</span>
+                    <span class="price">-</span>
+                </div>
             </div>
             <div class="menu-item">
                 <span class="item-name">Cappucino</span>
-                <span class="item-price">65.- / 75.- / 85-</span>
+                <div class="item-prices">
+                    <span class="price">65-</span>
+                    <span class="price">75-</span>
+                    <span class="price">85-</span>
+                </div>
             </div>
             <div class="menu-item">
                 <span class="item-name">Latte</span>
-                <span class="item-price">65.- / 75.- / 85-</span>
+                <div class="item-prices">
+                    <span class="price">65-</span>
+                    <span class="price">75-</span>
+                    <span class="price">85-</span>
+                </div>
             </div>
             <div class="menu-item">
                 <span class="item-name">Mocca</span>
-                <span class="item-price">70.- / 75.- / 85-</span>
+                <div class="item-prices">
+                    <span class="price">70-</span>
+                    <span class="price">75-</span>
+                    <span class="price">85-</span>
+                </div>
             </div>
             <div class="menu-item">
                 <span class="item-name">Espresso</span>
-                <span class="item-price">60.- / 75.- / 85-</span>
+                <div class="item-prices">
+                    <span class="price">60-</span>
+                    <span class="price">75-</span>
+                    <span class="price">85-</span>
+                </div>
             </div>
             <div class="menu-item">
                 <span class="item-name">Caramel Macchiato</span>
-                <span class="item-price">95.- / 115.- -</span>
+                <div class="item-prices">
+                    <span class="price">95-</span>
+                    <span class="price">115-</span>
+                    <span class="price">-</span>
+                </div>
             </div>
             <div class="menu-item">
                 <span class="item-name">Americano Marbo</span>
-                <span class="item-price">115.-</span>
+                <div class="item-prices">
+                    <span class="price">115-</span>
+                    <span class="price">-</span>
+                    <span class="price">-</span>
+                </div>
             </div>
             <div class="menu-item">
                 <span class="item-name">Americano Lum</span>
-                <span class="item-price">115.-</span>
+                <div class="item-prices">
+                    <span class="price">115-</span>
+                    <span class="price">-</span>
+                    <span class="price">-</span>
+                </div>
             </div>
         </div>
 
         <div class="menu-section">
-            <h2>NON-CAFFEINE (HOT / ICED / FRAPPE)</h2>
+            <h2>NON-CAFFEINE</h2>
+            <div class="price-header">
+                <span>HOT</span>
+                <span>ICED</span>
+                <span>FRAPPE</span>
+            </div>
             <div class="menu-item">
                 <span class="item-name">Chocolate</span>
-                <span class="item-price">85.- / 95.- -</span>
+                <div class="item-prices">
+                    <span class="price">85-</span>
+                    <span class="price">95-</span>
+                    <span class="price">-</span>
+                </div>
             </div>
             <div class="menu-item">
                 <span class="item-name">Cocoa</span>
-                <span class="item-price">75.- / 85.- -</span>
+                <div class="item-prices">
+                    <span class="price">75-</span>
+                    <span class="price">85-</span>
+                    <span class="price">-</span>
+                </div>
             </div>
             <div class="menu-item">
                 <span class="item-name">Thai Milk Tea</span>
-                <span class="item-price">75.- / 85.- / 115.-</span>
-            </div>
-            <div class="menu-item">
-                <span class="item-name">Peach Tea</span>
-                <span class="item-price">85.- / 115.-</span>
+                <div class="item-prices">
+                    <span class="price">75-</span>
+                    <span class="price">85-</span>
+                    <span class="price">115-</span>
+                </div>
             </div>
             <div class="menu-item">
                 <span class="item-name">Lemon Iced Tea</span>
-                <span class="item-price">85.- / 115.- -</span>
+                <div class="item-prices">
+                    <span class="price">-</span>
+                    <span class="price">85-</span>
+                    <span class="price">115-</span>
+                </div>
             </div>
             <div class="menu-item">
                 <span class="item-name">Matcha Green Tea</span>
-                <span class="item-price">95.-</span>
+                <div class="item-prices">
+                    <span class="price">95-</span>
+                    <span class="price">-</span>
+                    <span class="price">-</span>
+                </div>
             </div>
             <div class="menu-item">
                 <span class="item-name">Green Tea</span>
-                <span class="item-price">75.- 85.- -</span>
+                <div class="item-prices">
+                    <span class="price">75-</span>
+                    <span class="price">85-</span>
+                    <span class="price">-</span>
+                </div>
             </div>
             <div class="menu-item">
                 <span class="item-name">Green Tea Marbo</span>
-                <span class="item-price">115.-</span>
+                <div class="item-prices">
+                    <span class="price">115-</span>
+                    <span class="price">-</span>
+                    <span class="price">-</span>
+                </div>
             </div>
         </div>
 
@@ -140,31 +229,31 @@
             <h2>SMOOTHIES AND SODA</h2>
             <div class="menu-item">
                 <span class="item-name">Strawberry Smoothie</span>
-                <span class="item-price">115.-</span>
+                <span class="price">115-</span>
             </div>
             <div class="menu-item">
                 <span class="item-name">Blueberry Smoothie</span>
-                <span class="item-price">115.-</span>
+                <span class="price">115-</span>
             </div>
             <div class="menu-item">
                 <span class="item-name">Strawberry Smoothie</span>
-                <span class="item-price">115.-</span>
+                <span class="price">115-</span>
             </div>
             <div class="menu-item">
                 <span class="item-name">Yogurt Smoothie</span>
-                <span class="item-price">115.-</span>
+                <span class="price">115-</span>
             </div>
             <div class="menu-item">
                 <span class="item-name">Lime Smoothie</span>
-                <span class="item-price">115.-</span>
+                <span class="price">115-</span>
             </div>
             <div class="menu-item">
                 <span class="item-name">Passion Fruit Smoothie</span>
-                <span class="item-price">115.-</span>
+                <span class="price">115-</span>
             </div>
             <div class="menu-item">
                 <span class="item-name">Yuzu Soda</span>
-                <span class="item-price">85.-</span>
+                <span class="price">85-</span>
             </div>
         </div>
     </div>
